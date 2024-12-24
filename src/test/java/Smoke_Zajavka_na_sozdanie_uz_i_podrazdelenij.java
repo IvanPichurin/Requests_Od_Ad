@@ -40,7 +40,7 @@ public class Smoke_Zajavka_na_sozdanie_uz_i_podrazdelenij {
             put("enableVNC", true);
         }});
 
-        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), options);
+        driver = new RemoteWebDriver(new URL("http://172.17.0.2:4444/wd/hub"), options);
         mainPage = new MainPage(driver);
         zajavkaNaSozdanieUzIPodrazdelenij = new Zajavka_na_sozdanie_uz_i_podrazdelenij(driver);
 
