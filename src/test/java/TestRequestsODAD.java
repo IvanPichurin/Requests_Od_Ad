@@ -52,7 +52,7 @@ public class TestRequestsODAD {
             /* How to enable video recording */
             put("enableVNC", true);
         }});
-        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+        driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), options);
 
 
         //System.setProperty("chromedriver", "C:\\Users\\ipichurin\\IdeaProjects\\Request_OD_AD\\drivers\\chromedriver.exe");
