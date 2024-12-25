@@ -58,8 +58,8 @@
                                     src/test/TestSuite/Suite.xml
                                 </suiteXmlFile>
                             </suiteXmlFiles>
-
-                            <parallel>2</parallel>
+                            <parallel>classes</parallel>
+                            <threadCount>2</threadCount>
                         </configuration>
                 </plugin>
             </plugins>
