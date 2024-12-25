@@ -2,6 +2,8 @@ package org.example;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -49,6 +51,10 @@ public class BaseClass {
 
        Set<String> windows = driver.getWindowHandles();
        driver.switchTo().window((String) driver.getWindowHandles().toArray()[windows.size()-1]);
+    }
+
+    public void waitMainPageLoad(Wait wait){
+        wait.until(ExpectedConditions.invisibilityOfElementLocated((By.xpath("//div[@class='css-19iuou ant-spin ant-spin-lg base-loading' and @aria-busy='true']"))));
     }
 
 // добавить сущность к любой заявке
