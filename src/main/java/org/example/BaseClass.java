@@ -41,7 +41,7 @@ public class BaseClass {
     public void createRequestWithoutName(String name)  {
         dropDown(name);
         driver.findElement(By.xpath("// div[@class='ant-modal css-19iuou']/descendant::button[@class='css-19iuou ant-btn ant-btn-primary']")).click();
-        sleep(5);
+        sleep(7);
         windowHandles(); //переключаем контекст в другую вкладку (последнюю текущую)
     }
 
