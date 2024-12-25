@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Смок" parallel="classes" thread-count="1">
+<suite  name="Смок" parallel="classes" thread-count="2">
 <test name="SmokeRequestsODAD">
+
     <classes>
         <class name="Smoke_Zajavka_na_dobavlenie_dolzhnostnyh_pozicij"/>
 

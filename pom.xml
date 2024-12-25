@@ -35,9 +35,9 @@
 
     <profiles>
         <profile>
-            <id>Testik</id>
+            <id>SmokeRequestsODAD</id>
             <properties>
-            <suite.xml.file>Suite.xml</suite.xml.file>
+            <suite.xml.file>TestSuite\Suite.xml</suite.xml.file>
             </properties>
         </profile>
 
