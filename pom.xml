@@ -58,6 +58,8 @@
                                     src/test/TestSuite/Suite.xml
                                 </suiteXmlFile>
                             </suiteXmlFiles>
+
+                            <parallel>2</parallel>
                         </configuration>
                 </plugin>
             </plugins>
