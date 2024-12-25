@@ -74,7 +74,7 @@ public class TestRequestsODAD {
         mainPage.input("//input [@placeholder='Логин']", "ishilov");
         mainPage.input("//input [@placeholder='Пароль']", "Ishilov1_");
         mainPage.click("//button [@type='submit']");
-        Thread.sleep(15000);
+        Thread.sleep(25000);
     }
 
 
@@ -82,34 +82,34 @@ public class TestRequestsODAD {
     public void test() throws InterruptedException {
 
         mainPage.click(MainPage.CREAT_REQUEST);// + Создать заявку
-        Thread.sleep(2000);
+        Thread.sleep(6000);
         mainPage.createRequestWithoutName(zajavkaNaSozdanieUzIPodrazdelenij.RUS_NAME); // создать заявку с именем по дефолту
         zajavkaNaSozdanieUzIPodrazdelenij.addEntity(zajavkaNaSozdanieUzIPodrazdelenij.NAME_ENTITY_DEPARTMEN,"Проверка"); // добавляем в заявке оргу
         zajavkaNaSozdanieUzIPodrazdelenij.click(zajavkaNaSozdanieUzIPodrazdelenij.CREATE_UZ);
-        Thread.sleep(2000);
+        Thread.sleep(6000);
         zajavkaNaSozdanieUzIPodrazdelenij.addEntity(zajavkaNaSozdanieUzIPodrazdelenij.NAME_ENTITY_FIO, "Пушкин Александр Сергеевич");
 
         driver.get(mainPage.MainPage); // переход на главную страницу
         mainPage.click(MainPage.CREAT_REQUEST);
-        Thread.sleep(2000);
+        Thread.sleep(6000);
         mainPage.createRequestWithoutName(zajavkaNaSozdanieGruppovyhUzSvksM.RUS_NAME);
         zajavkaNaSozdanieGruppovyhUzSvksM.addEntity(zajavkaNaSozdanieGruppovyhUzSvksM.NAME_ENTITY, "svks_779_ugibdd");
 
         driver.get(mainPage.MainPage); // переход на главную страницу
         mainPage.click(MainPage.CREAT_REQUEST);
-        Thread.sleep(2000);
+        Thread.sleep(6000);
         mainPage.createRequestWithoutName(zajavkaNaDobavlenieDolzhnostnyhPozicij.RUS_NAME);
         zajavkaNaDobavlenieDolzhnostnyhPozicij.addEntity(zajavkaNaDobavlenieDolzhnostnyhPozicij.NAME_ENTITY, "Proverka");
 
         driver.get(mainPage.MainPage); // переход на главную страницу
         mainPage.click(MainPage.CREAT_REQUEST);
-        Thread.sleep(2000);
+        Thread.sleep(6000);
         mainPage.createRequestWithoutName(zajavkaNaIzmenenieUz.RUS_NAME);
         zajavkaNaIzmenenieUz.addEntity(zajavkaNaIzmenenieUz.NAME_ENTITY, "Proverka");
 
         driver.get(mainPage.MainPage); // переход на главную страницу
         mainPage.click(MainPage.CREAT_REQUEST);
-        Thread.sleep(2000);
+        Thread.sleep(6000);
         mainPage.createRequestWithoutName(zajavkaNaIzmeneniePodrazdelenij.RUS_NAME);
         zajavkaNaIzmeneniePodrazdelenij.addEntity(zajavkaNaIzmeneniePodrazdelenij.NAME_ENTITY, "ПиИнстанс 1 Провайдер 1 полное");
 
