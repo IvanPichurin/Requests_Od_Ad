@@ -46,7 +46,7 @@ public class Smoke_Zajavka_na_izmenenie_podrazdelenij {
                 put("enableVNC", true);
             }});
 
-            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+            driver = new RemoteWebDriver(new URL("http://172.26.48.1:4444/wd/hub"), options);
             mainPage = new MainPage(driver);
             zajavkaNaIzmeneniePodrazdelenij = new Zajavka_na_izmenenie_podrazdelenij(driver);
 
