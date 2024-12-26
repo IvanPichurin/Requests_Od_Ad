@@ -72,9 +72,9 @@ public class Smoke_Zajavka_na_izmenenie_uz {
             mainPage.click(MainPage.CREAT_REQUEST);
             mainPage.sleep(2);
             mainPage.createRequestWithoutName(zajavkaNaIzmenenieUz.RUS_NAME);
-            zajavkaNaIzmenenieUz.addEntity(zajavkaNaIzmenenieUz.NAME_ENTITY, "Proverka");
+            zajavkaNaIzmenenieUz.addEntity(zajavkaNaIzmenenieUz.NAME_ENTITY, "Proverka3");
 
-            assertTrue(driver.findElement(By.xpath("//tr[@class='ant-table-row ant-table-row-level-0']/td[ contains(text(),'Proverka')]")).isDisplayed());
+            assertTrue(driver.findElement(By.xpath("//tr[@class='ant-table-row ant-table-row-level-0']/td[ contains(text(),'Proverka3')]")).isDisplayed());
         }
 
 }

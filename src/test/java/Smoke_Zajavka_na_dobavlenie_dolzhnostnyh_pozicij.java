@@ -72,9 +72,9 @@ public class Smoke_Zajavka_na_dobavlenie_dolzhnostnyh_pozicij {
             mainPage.click(MainPage.CREAT_REQUEST);
             mainPage.sleep(2);
             mainPage.createRequestWithoutName(zajavkaNaDobavlenieDolzhnostnyhPozicij.RUS_NAME);
-            zajavkaNaDobavlenieDolzhnostnyhPozicij.addEntity(zajavkaNaDobavlenieDolzhnostnyhPozicij.NAME_ENTITY, "Proverka");
+            zajavkaNaDobavlenieDolzhnostnyhPozicij.addEntity(zajavkaNaDobavlenieDolzhnostnyhPozicij.NAME_ENTITY, "Proverka3");
 
-            assertTrue(driver.findElement(By.xpath("//tr[@class='ant-table-row ant-table-row-level-0']/td[ contains(text(),'Proverka')]")).isDisplayed());
+            assertTrue(driver.findElement(By.xpath("//tr[@class='ant-table-row ant-table-row-level-0']/td[ contains(text(),'Proverka3')]")).isDisplayed());
         }
 }
 
