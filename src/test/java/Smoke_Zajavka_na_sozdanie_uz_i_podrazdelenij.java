@@ -51,7 +51,7 @@ public class Smoke_Zajavka_na_sozdanie_uz_i_podrazdelenij {
         zajavkaNaSozdanieUzIPodrazdelenij = new Zajavka_na_sozdanie_uz_i_podrazdelenij(driver);
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));//Неявное ожидание
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));//Неявное ожидание
         wait = new WebDriverWait(driver, Duration.ofSeconds(1)); //Явное ожидание
 
         driver.get(BaseClass.HostName); // переход в СЗ

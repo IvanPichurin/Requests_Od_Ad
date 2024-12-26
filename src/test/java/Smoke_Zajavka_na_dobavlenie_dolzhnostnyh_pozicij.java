@@ -52,7 +52,7 @@ public class Smoke_Zajavka_na_dobavlenie_dolzhnostnyh_pozicij {
             zajavkaNaDobavlenieDolzhnostnyhPozicij = new Zajavka_na_dobavlenie_dolzhnostnyh_pozicij(driver);
 
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));//Неявное ожидание
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));//Неявное ожидание
             wait = new WebDriverWait(driver, Duration.ofSeconds(10)); //Явное ожидание
 
             driver.get(BaseClass.HostName); // переход в СЗ
