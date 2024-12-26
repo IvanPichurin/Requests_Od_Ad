@@ -55,7 +55,7 @@ public class Smoke_Zajavka_na_izmenenie_podrazdelenij {
 
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));//Неявное ожидание
-            new WebDriverWait(driver, Duration.ofSeconds(1)); //Явное ожидание
+            wait = new WebDriverWait(driver, Duration.ofSeconds(1)); //Явное ожидание
 
             driver.get(BaseClass.HostName); // переход в СЗ
 
