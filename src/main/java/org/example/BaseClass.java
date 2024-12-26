@@ -27,6 +27,19 @@ public class BaseClass {
         driver.findElement(By.xpath(Xpath)).sendKeys(input);
     }
 
+    public void login(WebDriver driver){
+
+        if(!driver.findElement(By.xpath("//div[normalize-space(text())='Авторизация']")).isDisplayed()){
+            driver.navigate().refresh();
+        }
+        else {
+            sleep(5);
+            input("//input [@placeholder='Логин']", "ishilov");
+            input("//input [@placeholder='Пароль']", "Ishilov1_");
+            click("//button [@type='submit']");
+        }
+    }
+
     public void sleep(int sec) {
         try {
             TimeUnit.SECONDS.sleep(sec);

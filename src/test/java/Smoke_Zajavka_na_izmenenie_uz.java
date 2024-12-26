@@ -4,6 +4,8 @@ import org.example.Zajavka_na_izmenenie_uz;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -21,6 +23,7 @@ public class Smoke_Zajavka_na_izmenenie_uz {
         Zajavka_na_izmenenie_uz zajavkaNaIzmenenieUz;
         RemoteWebDriver driver;
         MainPage mainPage;
+        Wait wait;
 
         @BeforeClass
         public void beforeClass() throws MalformedURLException {
@@ -50,15 +53,12 @@ public class Smoke_Zajavka_na_izmenenie_uz {
 
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));//Неявное ожидание
-            // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); //Явное ожидание
+            new WebDriverWait(driver, Duration.ofSeconds(1)); //Явное ожидание
 
             driver.get(BaseClass.HostName); // переход в СЗ
 
-            mainPage.sleep(5);
-            mainPage.input("//input [@placeholder='Логин']", "ishilov");
-            mainPage.input("//input [@placeholder='Пароль']", "Ishilov1_");
-            mainPage.click("//button [@type='submit']");
-            mainPage.sleep(20);
+            mainPage.login(driver);
+            mainPage.waitMainPageLoad(wait);
         }
 
         @AfterClass

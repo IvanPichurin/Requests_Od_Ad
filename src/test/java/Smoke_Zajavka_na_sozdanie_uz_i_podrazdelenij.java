@@ -56,11 +56,7 @@ public class Smoke_Zajavka_na_sozdanie_uz_i_podrazdelenij {
 
         driver.get(BaseClass.HostName); // переход в СЗ
 
-        mainPage.sleep(5);
-        mainPage.input("//input [@placeholder='Логин']", "ishilov");
-        mainPage.input("//input [@placeholder='Пароль']", "Ishilov1_");
-        mainPage.click("//button [@type='submit']");
-
+        mainPage.login(driver);
         mainPage.waitMainPageLoad(wait);
 
 
